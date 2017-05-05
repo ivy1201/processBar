@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  left: 200px;
+  top: 200px; }
+
+.circleContainer {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute; }
+
+.circleContainer:before {
+  content: '';
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  background-color: red;
+  border-radius: 100%;
+  left: 50%;
+  top: 0; }
+
+@-webkit-keyframes cicle-animate {
+  0%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+@keyframes cicle-animate {
+  0%, 100% {
+    opacity: 0; }
+  40% {
+    opacity: 1; } }
+.circleContainer:before {
+  animation: cicle-animate 1.2s infinite ease-in-out both; }
+
+.circleContainer:nth-of-type(1) {
+  transform: rotate(0deg); }
+
+.circleContainer:nth-of-type(1):before {
+  animation-delay: -1.1s; }
+
+.circleContainer:nth-of-type(2) {
+  transform: rotate(30deg); }
+
+.circleContainer:nth-of-type(2):before {
+  animation-delay: -1s; }
+
+.circleContainer:nth-of-type(3) {
+  transform: rotate(60deg); }
+
+.circleContainer:nth-of-type(3):before {
+  animation-delay: -0.9s; }
+
+.circleContainer:nth-of-type(4) {
+  transform: rotate(90deg); }
+
+.circleContainer:nth-of-type(4):before {
+  animation-delay: -0.8s; }
+
+.circleContainer:nth-of-type(5) {
+  transform: rotate(120deg); }
+
+.circleContainer:nth-of-type(5):before {
+  animation-delay: -0.7s; }
+
+.circleContainer:nth-of-type(6) {
+  transform: rotate(150deg); }
+
+.circleContainer:nth-of-type(6):before {
+  animation-delay: -0.6s; }
+
+.circleContainer:nth-of-type(7) {
+  transform: rotate(180deg); }
+
+.circleContainer:nth-of-type(7):before {
+  animation-delay: -0.5s; }
+
+.circleContainer:nth-of-type(8) {
+  transform: rotate(210deg); }
+
+.circleContainer:nth-of-type(8):before {
+  animation-delay: -0.4s; }
+
+.circleContainer:nth-of-type(9) {
+  transform: rotate(240deg); }
+
+.circleContainer:nth-of-type(9):before {
+  animation-delay: -0.3s; }
+
+.circleContainer:nth-of-type(10) {
+  transform: rotate(270deg); }
+
+.circleContainer:nth-of-type(10):before {
+  animation-delay: -0.2s; }
+
+.circleContainer:nth-of-type(11) {
+  transform: rotate(300deg); }
+
+.circleContainer:nth-of-type(11):before {
+  animation-delay: -0.1s; }
+
+.circleContainer:nth-of-type(12) {
+  transform: rotate(330deg); }
+
+.circleContainer:nth-of-type(12):before {
+  animation-delay: 0s; }
+
+/*# sourceMappingURL=process-bar.css.map */
