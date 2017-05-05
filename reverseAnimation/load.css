@@ -1,0 +1,28 @@
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
+.container:before, .container:after {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  border-top-color: red;
+  border-right-color: blue;
+  border-bottom-color: yellow;
+  border-left-color: green;
+  border-radius: 50%;
+  border-style: solid;
+  animation: rotate 1.5s  infinite ease-in-out; }
+
+.container:before {
+  border-width: 10vh; }
+
+.container:after {
+  border-width: 2.5vh;
+  width: 30vh;
+  height: 30vh;
+  animation-direction: reverse; }
+
+/*# sourceMappingURL=load.css.map */
